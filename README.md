@@ -28,8 +28,7 @@ So, for the same example as above, a batch size of 50 and you like picture #3 an
 
 ## Installation
 
-The extension can be installed directly from within the **Extensions** tab within the Webui
-<img src="images/installation.png"/>
+The extension can be installed directly from within the **Extensions** tab within the Webui.
 
 You can also install it manually by running the following command from within the webui directory:
 
