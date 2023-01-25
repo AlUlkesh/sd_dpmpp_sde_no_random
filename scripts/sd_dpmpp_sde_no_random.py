@@ -24,7 +24,7 @@ class Script(scripts.Script):
             # Save the original "BrownianTreeNoiseSampler.__init__"
             p.orig_BrownianTreeNoiseSampler_init = k_diffusion.sampling.BrownianTreeNoiseSampler.__init__
             # Create a hijacked version with the current seed as a literal and assign it to BrownianTreeNoiseSampler.__init__
-            BrownianTreeNoiseSampler_init = create_hijacked_init(p.seed)
+            BrownianTreeNoiseSampler_init = create_hijacked_init(p.all_seeds[0])
             k_diffusion.sampling.BrownianTreeNoiseSampler.__init__ = BrownianTreeNoiseSampler_init
 
     def postprocess(self, p, processed):
